@@ -201,8 +201,18 @@ reflete a noção de condição “nos dois sentidos”, ou seja, considera simu
 Portanto, considerando a noção de condição já introduzida e considerando que esta é “nos dois sentidos”, a proposição composta **p** <-> **q** é:
 ■ **verdadeira**, quando **p** e **q** são ambas **verdadeiras** ou ambas **falsas**;
 ■ **falsa**, somente quando as proposições **p** e **q** possuem valores verdade distintos.
-
 ##### Definição 2.6 – Bicondição
+Dadas duas proposições lógicas **p** e **q**, a semântica de *Bicondição* **p** <-> **q** é dada pela tabela-verdade ilustrada na figura 2.5.
+
+| **p** | **q** | **p** <-> **q** |
+| ----- | ----- | --------------- |
+| **V** | **V** | **V**           |
+| **V** | **F** | **F**           |
+| **F** | **V** | **F**           |
+| **F** | **F** | **V**           |
+##### Figura 2.5 – Tabela-verdade: **bicondição**
+
+##### Exemplo 2.7 – Bicondição
 Sugere-se observar a tabela ilustrada na figura 2.5, durante a leitura deste exemplo, procurando justificar por que a proposição composta, em cada um dos itens abaixo, é **verdadeira** ou **falsa**:
 - **[A]** **Verdadeira**: Windows é um sistema operacional **se e somente se** Pascal é uma linguagem de programação;
 - **[B]** **Falsa**: Windows é um sistema operacional **se e somente se** Pascal é uma planilha eletrônica;
