@@ -139,16 +139,16 @@ Sugere-se observar a tabela ilustrada na figura 2.2, durante a leitura deste exe
 
 #### ■ Disjunção
 A disjunção de duas proposições **p** e **q**, denotada por:
-- **p** v **q**
+- **p** ∨ **q**
 a qual é lida:
-- “**p** v **q**”
+- “**p** ∨ **q**”
 reflete a noção de que pelo menos uma (eventualmente duas) das proposições componentes deve ocorrer para que a resultante seja **verdadeira**. Assim, a proposição composta **p** v **q** é:
 ■ **verdadeira**, quando pelo menos uma das proposições é **verdadeira**;
 ■ **falsa**, somente quando simultaneamente **p** e **q** são **falsas**.
 ##### Definição 2.4 – Disjunção
-Dadas duas proposições lógicas **p** e **q**, a semântica da *Disjunção* **p** v **q** é dada pela tabela-verdade ilustrada na figura 2.3.
+Dadas duas proposições lógicas **p** e **q**, a semântica da *Disjunção* **p** ∨ **q** é dada pela tabela-verdade ilustrada na figura 2.3.
 
-| **p** | **q** | **p** v **q** |
+| **p** | **q** | **p** ∨ **q** |
 | ----- | ----- | ------------- |
 | **V** | **V** | **F**         |
 | **V** | **F** | **V**         |
@@ -187,7 +187,7 @@ Sugere-se observar a tabela ilustrada na figura 2.4, durante a leitura deste exe
 - **[A]** **Verdadeira**: **se** Windows é um sistema operacional, **então** Pascal é uma linguagem de programação;
 - **[B]** **Falsa**: **se** Windows é um sistema operacional, **então** Pascal é uma planilha eletrônica;
 - **[C]** **Verdadeira**: **se** Windows é um editor de textos, **então** Pascal é uma linguagem de programação;
-- **[A]** **Verdadeira**: **se** Windows é um editor de textos, **então** Pascal é uma planilha eletrônica.
+- **[D]** **Verdadeira**: **se** Windows é um editor de textos, **então** Pascal é uma planilha eletrônica.
 
 #### ■ Bicondição
 A bicondição envolvendo duas proposições **p** e **q**, denotada por:
@@ -217,4 +217,82 @@ Sugere-se observar a tabela ilustrada na figura 2.5, durante a leitura deste exe
 - **[A]** **Verdadeira**: Windows é um sistema operacional **se e somente se** Pascal é uma linguagem de programação;
 - **[B]** **Falsa**: Windows é um sistema operacional **se e somente se** Pascal é uma planilha eletrônica;
 - **[C]** **Falsa**: Windows é um editor de textos **se e somente se** Pascal é uma linguagem de programação;
-- **[A]** **Verdadeira**: Windows é um editor de textos **se e somente se** Pascal é uma planilha eletrônica.
+- **[D]** **Verdadeira**: Windows é um editor de textos **se e somente se** Pascal é uma planilha eletrônica.
+
+## 2.1.2 Fórmulas, linguagem lógica e tabelas-verdade
+
+- *Fórmulas lógicas* ou simplesmente *fórmulas* são as palavras da *linguagem lógica*. O conceito de fórmula é formalmente introduzido adiante, quando do estudo da *definição indutiva*, mas pode ser facilmente entendido como sendo uma sentença lógica corretamente construída sobre o alfabeto cujos símbolos são conetivos (^, v, →, etc.), parêntesis, identificadores (**p**, **q**, **r**, etc.), constantes, etc. Se uma fórmula contém variáveis, então esta não necessariamente possui valor-verdade associado. Ou seja, seu valor lógico depende do valor-verdade das sentenças que substituem as variáveis na fórmula
+##### Exemplo 2.8 – Fórmulas
+Suponhamos que **p**, **q** e **r** são sentenças variáveis. Então, são fórmulas:
+- **[A]** Os valores-verdade constantes **V** e **F**
+- **[B]** Qualquer proposição
+- **[C]** **p**, **q** e **r**
+- **[D]** **¬p**, **p** ^ **q**, **p** ∨ **q**, **p** → **q** e **p** <-> **q**
+- **[E]** **p** ∨ (**¬q**)
+- **[F]** (**p** ∧ **¬q**) → **F**
+- **[G]** ¬(**p** ∧ **q**) ↔ (¬**p** ∨ ¬**q**)
+- **[H]** **p** ∨ (**q** ∧ **r**) ↔ (**p** ∨ **q**) ∧ (**p** ∨ **r**)
+
+Com o objetivo de possibilitar a redução do número de parênteses e, consequentemente, simplificar visualmente as fórmulas, a seguinte ordem de precedência entre os conetivos é convencionada. A ordem é a seguinte:
+- ■ 1. Conetivos entre parênteses, dos mais internos para os mais externos; 
+- ■ 2. Negação (¬);
+- ■ 3. Conjunção (∧) e disjunção (∨); 
+- ■ 4. Condição (→);
+- ■ 5. Bicondição (↔).
+##### Exemplo 2.9 – Precedência de conetivos
+- **[A]** **p** ∨ (¬**q**) é equivalente a **p** ∨ ¬**q**
+- **[B]** (**p** ∧ ¬**q**) → **F** é equivalente a **p** ∧ ¬**q** → **F**
+- **[C]** ¬(**p** ∧ **q**) ↔ (¬**p** ∨ ¬**q**) é equivalente a ¬(**p** ∧ **q**) ↔ ¬**p** ∨ ¬**q**
+- **[D]** para a fórmula **p** ∨ (**q** ∧ **r**) ↔ (**p** ∨ **q**) ∧ (**p** ∨ **r**) qualquer omissão de parênteses resulta em ambiguidade (por quê?)
+
+As *tabelas-verdade* foram introduzidas quando da definição dos conetivos. Entretanto, como construir uma tabela-verdade de uma dada fórmula? Lembre-se de que a tabela-verdade deve explicitar todas as combinações possíveis dos valores lógicos das fórmulas atômicas componentes. Observe que:
+
+■	cada fórmula atômica não constante pode assumir dois valores lógicos: **V** e **F**. Obviamente, uma fórmula atômica constante possui um valor-verdade fixo (**V** ou **F**);
+■	portanto, na tabela-verdade da negação ilustrada na figura 2.1 (p. 43) duas linhas são suficientes para expressar os valores lógicos possíveis;
+■	para as tabelas com duas fórmulas atômicas (não constantes), como as da conjunção (figura 2.2, p. 43) e da condição (figura 2.4, p. 45), são necessárias quatro linhas, ou seja, **2²** possíveis combinações dos valores lógicos;
+■	de fato, é fácil verificar que, para **n** fórmulas atômicas (não constantes), são necessárias **2ⁿ** linhas na tabela-verdade para expressar todas as combinações possíveis de valores lógicos.
+
+Tal fato, bem como a técnica de construção de tabelas-verdade, é ilustrado nos exemplos que seguem.
+##### Exemplo 2.10 – Fórmulas
+Os passos de construção da tabela-verdade para a fórmula **p** ∨ ¬**q** são ilustrados na figura 2.6, da esquerda para a direita. Observe que:
+
+■	a tabela possui 4 = **2²** linhas, pois se trata de duas fórmulas atômicas;
+■	as duas primeiras colunas expressam as combinações possíveis de **p** e **q**;
+■	a terceira coluna é introduzida e corresponde à negação de **q**, ou seja, à fórmula ¬**q**;
+■	a quarta coluna corresponde à disjunção de **p** com ¬**q**, ou seja, **p** ∨ ¬**q**, a qual contém o
+resultado desejado.
+
+| **p** | **q** |     | **p** | **q** | ¬**q** |     | **p** | **q** | ¬**q** | **p** ∨ ¬**q** |
+| ----- | ----- | --- | ----- | ----- | ------ | --- | ----- | ----- | ------ | -------------- |
+| **V** | **V** |     | **V** | **V** | **F**  |     | **V** | **V** | **F**  | **V**          |
+| **V** | **F** |     | **V** | **F** | **V**  |     | **V** | **F** | **V**  | **V**          |
+| **F** | **V** |     | **F** | **V** | **F**  |     | **F** | **V** | **F**  | **F**          |
+| **F** | **F** |     | **F** | **F** | **V**  |     | **F** | **F** | **V**  | **V**          |
+
+##### Figura 2.6 – Passos de construção de uma tabela-verdade
+
+##### Exemplo 2.11 – Tabela-verdade
+A fórmula **p** ∧ ¬**q** → **F** possui 3 proposições atômicas. Entretanto, como a fórmula atômica **F** é constante, não é considerada no cálculo do número de linhas. Assim, a tabela-verdade possui 4 = **2²** e é ilustrada na figura 2.7. Observe que não foi introduzida uma coluna para o valor constante **F**, pois a sua introdução seria redundante (a coluna conteria somente **F**).
+
+| **p** | **q** | ¬**q** | **p** ^ ¬**q** | **p** ^ ¬**q** → **F** |
+| ----- | ----- | ------ | -------------- | ---------------------- |
+| **V** | **V** | **F**  | **F**          | **V**                  |
+| **V** | **F** | **V**  | **V**          | **F**                  |
+| **F** | **V** | **F**  | **F**          | **V**                  |
+| **F** | **F** | **V**  | **V**          | **V**                  |
+##### Figura 2.7 – Tabela-verdade
+
+##### Exemplo 2.12 – Tabela-verdade
+A fórmula **p** ∨ (**q** ∧ **r**) ↔ (**p** ∨ **q**) ∧ (**p** ∨ **r**) possui 3 fórmulas atômicas não constantes. Portanto, a tabela-verdade possui 8 = **2³** linhas e é ilustrada na figura 2.8. Observe que a construção da tabela respeitou a ordem de precedência definida.
+
+| **p**     | **q** | **r** | **r** ^ **q** | **p** ∨ (**q** ^ **r**) | **p** ∨ **q** | **p** ∨ **r** | (**p** ∨ q) ^ (**p** ∨ **r**) | **p** ∨ (**q** ^ **r**) <->(**p** ∨ **q**) ^ (**p** ∨ **r**) |
+| --------- | ----- | ----- | ------------- | ----------------------- | ------------- | ------------- | ----------------------------- | ------------------------------------------------------------ |
+| **V**     | **V** | **V** | **V**         | **V**                   | **V**         | **V**         | **V**                         | **V**                                                        |
+| **V**     | **V** | **F** | **F**         | **V**                   | **V**         | **V**         | **V**                         | **V**                                                        |
+| **V**     | **F** | **V** | **F**         | **V**                   | **V**         | **V**         | **V**                         | **V**                                                        |
+| **V**     | **F** | **F** | **F**         | **V**                   | **V**         | **V**         | **V**                         | **V**                                                        |
+| **F**<br> | **V** | **V** | **V**         | **V**                   | **V**         | **V**         | **V**                         | **V**                                                        |
+| **F**<br> | **V** | **F** | **F**         | **V**                   | **V**         | **F**         | **F**                         | **V**                                                        |
+| **F**<br> | **F** | **V** | **F**         | **F**                   | **F**         | **V**         | **F**                         | **V**                                                        |
+| **F**<br> | **F** | **F** | **F**         | **F**                   | **F**         | **F**         | **F**                         | **V**                                                        |
+##### Figura 2.8 – Tabela-verdade
