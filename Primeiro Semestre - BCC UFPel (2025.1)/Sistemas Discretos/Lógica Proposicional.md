@@ -121,12 +121,12 @@ Uma *tabela-verdade* é uma tabela que descreve os valores lógicos de uma propo
 ##### Definição 2.3 – Conjunção
 - Dadas duas proposições lógicas **p** e **q**, a semântica da *Conjunção* **p** ^ **q** é dada pela tabela-verdade ilustrada na figura 2.2.
 
-| **p** | **q** | **p ^q** |
-| ----- | ----- | -------- |
-| **V** | **V** | **V**    |
-| **V** | **F** | **F**    |
-| **F** | **V** | **F**    |
-| **F** | **F** | **F**    |
+| **p** | **q** | **p** ^ **q** |
+| ----- | ----- | ------------- |
+| **V** | **V** | **V**         |
+| **V** | **F** | **F**         |
+| **F** | **V** | **F**         |
+| **F** | **F** | **F**         |
 ##### Figura 2.2 – Tabela-verdade: **conjunção**
 
 Relativamente à tabela-verdade da conjunção ilustrada na figura 2.2, observe que, para expressar todas as combinações possíveis de valores lógicos das proposições **p** e **q**, foram necessárias quatro linhas (quantas linhas seriam necessárias para expressar a combinação de todos os valores lógicos possíveis de **n** proposições?).
