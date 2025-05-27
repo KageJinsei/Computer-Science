@@ -16,7 +16,7 @@ int main() {
   printf("Digite a terceira nota: ");
   scanf("%f", &n3);
 
-  if (n1 > n2 && n1 > n3) {
+  if (n1 >= n2 && n1 >= n3) {
     mp = (n1 * 4) + (n2 * 3) + (n3 * 3);
     p = 4 + 3 + 3;
     nf = mp / p;
@@ -30,7 +30,7 @@ int main() {
       printf("Nota final: %.2f - REPROVADO!", nf);
     }
 
-  } else if (n2 > n1 && n2 > n3) {
+  } else if (n2 >= n1 && n2 >= n3) {
       mp = (n1 * 3) + (n2 * 4) + (n3 * 3);
       p = 4 + 3 + 3;
       nf = mp / p;
@@ -44,7 +44,7 @@ int main() {
         printf("Nota final: %.2f - REPROVADO!", nf); 
     }
 
-  } else if (n3 > n1 && n3 > n2) {
+  } else if (n3 >= n1 && n3 >= n2) {
       mp = (n1 * 3) + (n2 * 3) + (n3 * 4);
       p = 4 + 3 + 3;
       nf = mp / p;
