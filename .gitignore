@@ -1,0 +1,11 @@
+# Ignorar diretório output e todo o seu conteúdo
+/output/
+
+# Ignorar arquivos .exe
+*.exe
+
+# Ignorar .vscode
+/.vscode/
+
+# Ignorar por enquanto o diretório C
+/C/
