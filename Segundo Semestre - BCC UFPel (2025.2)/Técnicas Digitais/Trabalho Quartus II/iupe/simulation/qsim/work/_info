@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\alunos\Desktop\iupe\simulation\qsim
+vturtle
+Z1 I1RhQDW:>UWhl]<1]^LOn11
+Z2 VHK[zZKhT@>bB]9oS:FL8k2
+Z3 dC:\Users\alunos\Desktop\iupe\simulation\qsim
+Z4 w1760020051
+Z5 8lerolero.vo
+Z6 Flerolero.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|lerolero.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 9GV8CMWCYal_:Z3e>zRUL2
+!s85 0
+Z11 !s108 1760020052.082000
+Z12 !s107 lerolero.vo|
+!s101 -O0
+vturtle_vlg_check_tst
+!i10b 1
+Z13 !s100 nf=age_m8`VP>oAA[7XAn3
+Z14 If32fbHj5K?>2FaDGgJiiI1
+Z15 V9ICSU<Mk>k`kbHYDWKX?O1
+R3
+Z16 w1760020050
+Z17 8lerolero.vt
+Z18 Flerolero.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z19 !s108 1760020052.175000
+Z20 !s107 lerolero.vt|
+Z21 !s90 -work|work|lerolero.vt|
+!s101 -O0
+R9
+vturtle_vlg_sample_tst
+!i10b 1
+Z22 !s100 J_WK0BFHaOfzfMFO9XciH0
+Z23 I=2gY]WW9bfQBmK3Yz2>?b3
+Z24 V75[E86kW79GRd7`BQL4bD2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vturtle_vlg_vec_tst
+!i10b 1
+Z25 !s100 oUEE0TJ^9^l[aN>2an_2P0
+Z26 I>?mokZ`P;^]?WPZhiehJl2
+Z27 VV2i;KaG2DOh]?AJ3:``z[3
+R3
+R16
+R17
+R18
+Z28 L0 156
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

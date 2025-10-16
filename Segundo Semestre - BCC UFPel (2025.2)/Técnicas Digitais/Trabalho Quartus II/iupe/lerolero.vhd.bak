@@ -1,0 +1,8 @@
+entity lerolero is port 
+(a:in bit;
+ b:out bit);
+end lerolero;
+
+architecture arq_lerolero of lerolero is begin
+b<=a;
+end arq_lerolero;

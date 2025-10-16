@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity lero is port 
+(a:in std_logic;
+ b:out std_logic);
+end lero;
+
+architecture arq_lero of lero is begin
+b<=a; --b recebe a(lógica)
+end arq_lero;
